@@ -102,6 +102,12 @@ body::-webkit-scrollbar {
     border-style: dashed;
     border-radius:10px;
     overflow:auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.sidequests::-webkit-scrollbar {
+    display:none;
 }
 
 .all-quests > * {

@@ -32,7 +32,7 @@
                     <p>Fun Riddle tricky game</p>
                     <a target="_blank" href="https://beasttale19-cmd.github.io/Brain-Game/main.html"><img src="../images/brain-game.png" alt="brain-game"></a>
                 </div>
-                <div class="project2">
+                <div id="createNew" class="project2">
                     <h1>+</h1>
                     <p>Create Project!</p>
                 </div>
@@ -40,7 +40,9 @@
         </div>
 
         <script>
-            alert('You cannot create any project for now!')
+            document.getElementById("createNew").onclick = function(){
+                alert('You cannot create any project for now!')
+            }
             </script>
     </body>
 </html>
