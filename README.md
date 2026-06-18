@@ -44,16 +44,6 @@ Some Screenshots of Macondo Copy:
 
 ## Future Improvements
 
-- Add more features
-- Improve UI
-- Optimize performance
+-I will maybe try to add more interactability using js. As im learning js. The project was of 1 month ago and i'm just uploading it now.
+-I will try to make it more responsive.
 
-## Author
-
-Your Name
-
-GitHub: https://github.com/your-username
-
-## License
-
-This project is licensed under the MIT License.
