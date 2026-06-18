@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact-US</title>
+        <link rel="icon" href="../images/butterfly-icon.png">
+        <style>
+                @import url('https://fonts.googleapis.com/css2?family=Cause:wght@100..900&family=Chela+One&family=Passero+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+        a {
+            text-decoration:none;
+            color:inherit;
+            padding:5px;
+            margin-top:20px;
+            transition: 0.3s;
+            border:2px solid rgb(255, 255, 255);
+            border-radius: 7px;
+            display:inline-block;
+        }
+
+        a:hover {
+            transform: scale(1.1);
+        }
+
+
+        body {
+            font-family: Poppins, sans-serif;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            flex-direction:column;
+            flex-wrap:wrap;
+            color:white;
+            background-color:rgb(0, 0, 0);
+        }
+
+        form{
+            border:2px solid rgb(255, 255, 255);
+            border-radius:7px;
+        }
+
+    </style>
+    </head>
+    <body>
+        <h1 align="center">Contact US!</h1>
+        <p>If you need any kind of help, sugegstion etc. do let me know..</p>
+        <p>We will message you </p>
+        <form action="https://formsubmit.co/beasttale19@gmail.com"
+            method="post">
+            <label for="gmail">Gmail:</label>
+            <input id="gmail" type="text" name="gmail"
+                placeholder="Enter your Gmail">
+
+            <br><br>
+
+            <label for="txt:">Text Here:</label>
+            <textarea id="txt" type="text" name="gmail"
+                placeholder="Enter your suggestion or help!"></textarea>
+<br>
+                <input type="submit" id="submit">
+
+        </form>
+        <a href="../index.html">Go back!</a>
+    </body>
+</html>

@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display:flex;
+    overflow:auto;
+    background-color:bisque;
+    background-image: url('../images/BG.webp');
+    background-size:cover;
+}
+
+.side-nav {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction:column;
+    background-color:rgb(52, 124, 192);
+    border-radius:10px;
+    width: 5vw;
+    height:70vh;
+    margin-top:20px;
+    overflow:hidden;
+    position:fixed;
+    transition:0.3s;
+}
+
+.side-nav:hover {
+    width:18vw;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.nav-ments {
+    font-size: 1.8em;
+    margin:0.3vw 0;
+    padding:5px 0px;
+    align-self:flex-start;
+    width:100%;
+    color:white;
+    /* text-shadow: 10px 10px 10px black; */
+    white-space: nowrap;
+    padding:5px 20px;;
+}
+
+.nav-ments span {
+    margin-right: 3vw;
+}
+
+
+.nav-ments:nth-child(1) {
+    background-color:rgba(0, 0, 0, 0.582);
+}
+
+.container {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    width:85vw;
+    margin-left:15vw;
+    height:auto;
+    padding-top:2vw;
+}
+
+.container-title {
+    color:white;
+    border-radius:12px;
+    background-color: rgba(37, 56, 117, 0.774);
+    padding:0px 10vw;
+}
+
+.tutorial {
+    margin-top:30px;
+    font-size:2em;
+    width:60vw;
+    text-align:center;
+    display:block;
+    background-color:tan;
+    border-radius:7px;
+    transition:0.3s;
+    margin-bottom:20px;
+}
+
+.tutorial:hover {
+    transform: scale(1.1);
+    cursor:pointer;
+}
+
+.download {
+    background-color: rgb(92, 104, 141);
+    border-radius:10px;
+    width:60vw;
+    font-size:1.5em;
+    color:white;
+}
+
+.download > *{
+    margin:15px 20px;
+}
+
+.download-link {
+    display:flex;
+    flex-direction:column;    
+    gap:5px;
+    width:20vw;
+}
+
+.download-link a {
+    border-radius:7px;
+    background-color: brown;
+    border:2px solid black;
+    transition:0.3s;
+}
+
+.download-link a:hover {
+    transform:translateX(15px);
+}
+
+div.howto {
+    background-color:rgb(121, 103, 80);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    width:60vw;
+    font-size:2em;
+    border:2px solid black;
+    border-radius: 20px;
+}
+
+div.howto * {
+    transition:0.3s;
+}
+div.howto *:hover {
+    transform:scale(1.1);
+    cursor:default;
+}
+
+div.how-to-head {
+    margin-top:20px;
+    font-family: Poppins;
+}
+
+.progress {
+    background-color: rgb(160, 135, 102);
+    width:60vw;
+    margin-top:10px;
+    border-radius: 10px;
+    margin:10px;
+}
+
+.ments-of-gess {
+    display:flex;
+    justify-content: space-around;
+    align-items:ceneter;
+    
+}
+
+.progress-ments {
+    border:10px solid tan;
+    background-color:rgb(182, 89, 61);
+    font-size:2em;
+    margin:10px;
+    width:25vw;
+    font-weight:500;
+    font-family:cause;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+
+.progress-ments:hover {
+    transform:scale(1.05);
+}

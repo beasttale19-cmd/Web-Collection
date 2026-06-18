@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Cause:wght@100..900&family=Chela+One&family=Passero+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body::selection {
+    color: transparent;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    background-image: url(../images/main_bg-pc.png);
+}
+
+nav {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+a {
+    text-decoration:none;
+    color:inherit;
+}
+
+div.right * {
+    padding: 11px 17px;
+    border: 3px solid rgba(107, 7, 32, 0.801);
+    margin: 5px;
+    transition:0.3s;
+    display:inline-block;
+}
+
+div.right *:hover {
+    transform: scale(1.1);
+}
+
+div.left * {
+    transition:0.3s;
+}
+div.left *:hover {
+    transform:scale(1.1);
+    cursor:pointer;
+}
+
+main {
+    width:80vw;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+
+.explore {
+    position:absolute;
+    bottom:30px;
+    left:500px;
+}
+
+.donkey {
+    position:absolute;
+    bottom:30px;
+    left:600px;
+}
+
+main img:hover {
+    transform:scale(1.1);
+    cursor:pointer;
+}
+
+main img{
+    display:inline-block;
+    transition:0.3s;
+}
+
+.soil {
+    transform: rotate(45deg);
+    position:absolute;
+    right:300px;
+    bottom: 200px;
+    border-radius:10px;
+}
+
+.soil:hover {
+    transform: rotate(45deg) scale(1.1);
+}
+
+footer {
+    position:absolute;
+    bottom:0px;    
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+footer > div > * {
+    padding:5px;
+    margin:5px;
+    border:3px solid  rgb(107, 7, 32);;
+    transition:0.3s;
+    display:inline-block;
+    font-size:2em;
+
+}
+
+footer > div > *:hover {
+    transform:scale(1.1);
+}

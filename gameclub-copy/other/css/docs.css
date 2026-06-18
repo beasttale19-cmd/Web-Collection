@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display:flex;
+}
+
+.sidenav {
+    font-weight:700;
+    font-size:3vw;
+    display:flex;
+    flex-direction: column;
+    position: fixed;
+    color:white;
+    background-color:black;
+    height:100vh;
+    width: 18vw;
+    padding:4vw;
+    overflow:auto;
+}
+
+.sidenav div {
+    margin: 0.7vw 0;
+    border-radius:10px;
+}
+
+.sidenav div:hover {
+    color: yellow;
+}
+
+.sidenav span {
+    border-radius:20px;
+    background-color:white;
+    color:black;
+    margin-right:0.2vw;
+}
+
+.sidenav div:nth-child(5) {
+    background-color:yellow;
+    color:black;
+}
+
+.container {
+    display:flex;
+    align-items: center;
+    margin-left: 18vw;
+    flex-direction: column;
+    width:82vw;
+    margin-top:10vw;
+    margin-bottom:5vw;
+    flex-wrap:wrap;
+}
+
+.container > * {
+    width:60vw;
+}
+
+.title {
+    font-size:2em;
+    background-color:black;
+    color:white;
+    border-radius:10px;
+}
+
+.des {
+    color:rgb(56, 41, 41);
+}
+
+.documents {
+    margin-top: 2vw;
+}
+
+.documents > div > div > a {
+    display:flex;
+    background-color:rgb(196, 196, 4);
+    border:2px solid black;
+    border-radius:20px;
+    width:20vw;
+    flex-direction:row;
+    justify-content:space-between;
+    padding:1.5vw;
+    transition: 0.3s;
+    margin: 1vw;
+}
+
+.documents > div > div > a:hover {
+    transform: scale(1.05);
+}
+
+.doc-is-real {
+    display:flex;
+    flex-wrap:wrap;
+}

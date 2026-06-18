@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>leaderboard - Flavortown</title>
+        <link rel="shortcut icon" href="../images/flavrtown-logo.png"
+            type="image/png">
+        <link rel="stylesheet" href="../../css/font.css">
+        <style>
+
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+
+        body {
+            background-color:tan;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            overflow:hidden;
+            flex-direction: column;
+            height:100vh;
+            box-sizing: border-box;
+        }
+
+        .leader {
+            display:flex;
+            background-color:rgb(91, 91, 173);
+            border-radius:10px;
+            align-items:center;
+            justify-content: space-between;
+            width:60vw;
+            font-size:2em;
+            border:10px solid skyblue;
+            height:20vh;
+            margin-bottom:3vw;
+        }
+
+        .leader > * {
+            display:flex;
+            align-items:center;
+            justify-content: center;
+        }
+
+        div > img {
+            border-radius:80px;
+        }
+
+        a {
+            background-color:brown;
+            border:5px solid red;
+            font-size:2em;   
+            border-radius:7px;
+            transition:0.3s;
+            display:inline-block;
+        }
+
+        a:hover {
+            transform:scale(1.1);
+        }
+    </style>
+    </head>
+    <body>
+        <h1>Leaderboards</h1>
+        <div class="leader">
+            <div class="left"><img width="100px" height="100px"
+                    src="../images/pfp.jpg" alt>
+                <p>Nirjal Acharya</p>
+            </div>
+            <div class="right">
+                <p>🍪725</p>
+            </div>
+        </div>
+        <div class="goback">
+            <a href="../kitchen.html">Go back</a>
+        </body>
+    </html>

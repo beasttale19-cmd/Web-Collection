@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display:flex;
+    overflow:scroll;
+    background-color:bisque;
+    background-image: url('../../images/BG.webp');
+    background-size:cover;
+}
+
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
+.side-nav {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction:column;
+    background-color:rgb(52, 124, 192);
+    border-radius:10px;
+    width: 5vw;
+    height:70vh;
+    margin-top:20px;
+    overflow:hidden;
+    position:fixed;
+    transition:0.3s;
+}
+
+.side-nav:hover {
+    width:18vw;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.nav-ments {
+    font-size: 1.8em;
+    margin:0.3vw 0;
+    padding:5px 0px;
+    align-self:flex-start;
+    width:100%;
+    color:white;
+    /* text-shadow: 10px 10px 10px black; */
+    white-space: nowrap;
+    padding:5px 20px;;
+}
+
+.nav-ments span {
+    margin-right: 3vw;
+}
+
+
+.nav-ments:hover {
+    background-color:rgba(0, 0, 0, 0.452);
+}
+
+
+.nav-ments:nth-child(5) {
+    background-color:rgba(0, 0, 0, 0.582);
+}
+
+.container {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    width:85vw;
+    margin-left:15vw;
+    height:auto;
+    padding-top:2vw;
+}
+
+.container-title {
+    color:white;
+    border: 3px solid rgb(12, 0, 124);
+    border-radius:12px;
+    background-color: blueviolet;
+    padding:0px 10vw;
+}
+
+.container > img {
+    transition:0.3s;
+}
+
+.container > :nth-child(1):hover {
+    transform:scale(1.03) rotate(-10deg);
+    cursor:none;
+}
+
+
+.container > p, h1 {
+    width:40vw;
+}
