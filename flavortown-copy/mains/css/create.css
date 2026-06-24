@@ -107,9 +107,11 @@ body::-webkit-scrollbar {
     display:none;
     /* display:flex; */
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.box2 > * {
+.box2 > textarea {
     color:brown;
     background-color:transparent;
     width:60vw;
@@ -127,4 +129,17 @@ body::-webkit-scrollbar {
 #des {
     font-size:1.5em;
     height:20vh;
+}
+
+#submitCreate {
+    padding:10px;
+    background-color:brown;
+    border-radius: 7px;
+    color:white;
+    transition:0.3s;
+}
+
+#submitCreate:hover {
+    background-color:rgb(116, 36, 36);
+    cursor:pointer;
 }
