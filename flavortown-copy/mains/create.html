@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Flavortown - Copy</title>
         <link rel="icon" href="../images/flavrtown-logo.png" type="image/png">
-        <link rel="stylesheet" href="css/projects.css">
+        <link rel="stylesheet" href="css/create.css">
         <link rel="stylesheet" href="../css/font.css">
     </head>
     <body>
@@ -20,30 +20,28 @@
         </nav>
 
         <div class="container">
-            <h1 class="container-title">Projects</h1>
-            <div class="projects-head">
-                <p class="left-p">What yall cookin'</p>
-                <div class="right-a" align="right">
-                    <a class="right-p" href="projects-help.html">Need Help?</a>
-                </div>
+            <h1 class="container-title">Create</h1>
+
+            <div id="box" class="box">
+                <h1>+</h1>
             </div>
 
-            <div class="projects">
-                <div class="project1">
-                    <p>Fun Riddle tricky game</p>
-                    <a target="_blank" href="https://beasttale19-cmd.github.io/Brain-Game/main.html"><img src="../images/brain-game.png" alt="brain-game"></a>
-                </div>
-                <div id="createNew" class="project2">
-                    <h1>+</h1>
-                    <p>Create Project!</p>
-                </div>
+            <div id="box2" class="box2">
+                <textarea name="head" id="head" placeholder="Title: My Project...."></textarea><br>
+                <textarea name="des" id="des" placeholder="Description: eg. I made this project using html,css and js. The project is a game and is about jumping.... "></textarea>
+                <a href="">Create!</a>
             </div>
         </div>
 
+
         <script>
-            document.getElementById("createNew").onclick = function(){
-                alert('You cannot create any project for now!')
+            let box = document.getElementById("box")
+            let box2 = document.getElementById("box2")
+
+            box.onclick = function(){
+                box.style.display = "none";
+                box2.style.display = "flex";
             }
-            </script>
+        </script>
     </body>
 </html>
