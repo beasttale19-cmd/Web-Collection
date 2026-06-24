@@ -143,3 +143,20 @@ body::-webkit-scrollbar {
     background-color:rgb(116, 36, 36);
     cursor:pointer;
 }
+
+.made {
+    display:none;
+    /* display:flex; */
+    flex-direction: column;
+    width:60vw;
+    border-radius:7px;
+    border:4px solid brown;
+    color:brown;
+    font-family:Poppins, sans-serif;
+    margin-top:3vh;
+    padding: 2vh 0;
+}
+
+.made:hover {
+    cursor:pointer;
+}

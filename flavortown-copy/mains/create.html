@@ -10,10 +10,13 @@
     </head>
     <body>
         <nav class="side-nav">
-            <a href="../kitchen.html" class="nav-ments"><span>☕︎ </span>Kitchen</a>
+            <a href="../kitchen.html" class="nav-ments"><span>☕︎
+                </span>Kitchen</a>
             <a href="explore.html" class="nav-ments"><span>✵ </span>Explore</a>
-            <a href="projects.html" class="nav-ments"><span>⌬ </span>Projects</a>
-            <a href="sidequests.html" class="nav-ments"><span>🗐 </span>Sidequests</a>
+            <a href="projects.html" class="nav-ments"><span>⌬
+                </span>Projects</a>
+            <a href="sidequests.html" class="nav-ments"><span>🗐
+                </span>Sidequests</a>
             <a href="vote.html" class="nav-ments"><span>★ </span>Vote</a>
             <a href="shop.html" class="nav-ments"><span>𖠩 </span>Shop</a>
             <a href="create.html" class="nav-ments"><span>✚ </span>Create</a>
@@ -27,21 +30,51 @@
             </div>
 
             <div id="box2" class="box2">
-                <textarea name="head" id="head" placeholder="Title: My Project...."></textarea><br>
-                <textarea name="des" id="des" placeholder="Description: eg. I made this project using html,css and js. The project is a game and is about jumping.... "></textarea>
+                <textarea name="head" id="head"
+                    placeholder="Title: My Project...."></textarea><br>
+                <textarea name="des" id="des"
+                    placeholder="Description: eg. I made this project using html,css and js. The project is a game and is about jumping.... "></textarea>
                 <a id="submitCreate">Create!</a>
             </div>
-        </div>
 
+            <div id="made" class="made">
+                <h2 id="titleMade">Title:</h2>
+                <h3 id="desMade">Description:</h3>
+            </div>
+        </div>
 
         <script>
             let box = document.getElementById("box")
             let box2 = document.getElementById("box2")
+            let create = document.getElementById("submitCreate")
+            let inputHead = document.getElementById("head");
+            let inputDes = document.getElementById("des");
+            let titleMade = document.getElementById("titleMade")
+            let desMade = document.getElementById("desMade")
+            let made = document.getElementById("made")
 
             box.onclick = function(){
                 box.style.display = "none";
                 box2.style.display = "flex";
             }
+
+            made.onclick = function() {
+                box.style.display = "none";
+                box2.style.display = "flex";
+                made.style.display = "none";
+            }
+
+            create.onclick = function(){
+           
+                box.style.display = "none";
+                box2.style.display = "none";
+                made.style.display = "flex"
+
+                titleMade.textContent = `Title: ${inputHead.value}`;
+                desMade.textContent = `Descirption: ${inputDes.value}`;
+            }
+
+            
         </script>
     </body>
 </html>
